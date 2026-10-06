@@ -19,8 +19,7 @@ _Devils never cry._
 </div>
 
 > **Fan project.** Not affiliated with or endorsed by CAPCOM. Devil May Cry and all related names, characters
-> and artwork belong to CAPCOM. No official artwork is included in this repository — see
-> [Official artwork](#-official-artwork).
+> and artwork belong to CAPCOM. All official artwork © CAPCOM, used here for a non-commercial fan project.
 
 ---
 
