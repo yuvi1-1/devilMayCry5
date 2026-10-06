@@ -72,7 +72,7 @@ export function Footer() {
               <p className="font-display text-lg font-bold tracking-[0.3em] text-bone">DEVIL MAY CRY</p>
               <p className="label mt-2 text-[0.6rem] text-ash">© Fan-made concept · {new Date().getFullYear()}</p>
               <p className="mt-4 max-w-sm text-xs leading-relaxed font-light text-ash/70">
-                An unofficial, non-commercial tribute. Not affiliated with or endorsed by CAPCOM. Devil May Cry and all related names are trademarks of their respective owners. All artwork on this site is original placeholder art.
+                An unofficial, non-commercial tribute. Not affiliated with or endorsed by CAPCOM. Devil May Cry and all related names are trademarks of their respective owners. Official artwork © CAPCOM, used here for non-commercial fan purposes only.
               </p>
             </div>
           </div>
