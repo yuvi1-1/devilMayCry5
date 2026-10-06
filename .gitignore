@@ -7,10 +7,6 @@ dist-ssr/
 *.local
 *.tsbuildinfo
 
-# Official Capcom artwork: never commit (keep the folder's README)
-src/assets/official/**
-!src/assets/official/README.md
-
 # Environment / secrets
 .env
 .env.*
