@@ -1,0 +1,232 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-void: #050505;
+  --color-abyss: #0b0b0d;
+  --color-crypt: #111114;
+  --color-crimson: #c8102e;
+  --color-blood: #8a0b1c;
+  --color-burgundy: #3d0710;
+  --color-steel: #8b8d96;
+  --color-gunmetal: #2a2b30;
+  --color-bone: #ece8e1;
+  --color-ash: #77777e;
+
+  --font-display: 'Cinzel', 'Times New Roman', serif;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-ui: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+  --font-sans: 'Barlow', system-ui, sans-serif;
+
+  --ease-cine: cubic-bezier(0.76, 0, 0.24, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  html {
+    background: var(--color-void);
+    color: var(--color-bone);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+    overflow-x: clip;
+  }
+  body {
+    font-family: var(--font-sans);
+    background: var(--color-void);
+    overflow-x: clip;
+    min-height: 100dvh;
+  }
+  body.is-locked {
+    overflow: hidden;
+  }
+  ::selection {
+    background: var(--color-crimson);
+    color: #fff;
+  }
+  :focus-visible {
+    outline: 1px solid var(--color-crimson);
+    outline-offset: 4px;
+  }
+  img {
+    user-select: none;
+    -webkit-user-drag: none;
+  }
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #050505;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2a2b30;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-crimson);
+  }
+}
+
+/* Custom cursor: hide the native one only when ours is active */
+html.has-custom-cursor,
+html.has-custom-cursor * {
+  cursor: none !important;
+}
+
+@layer components {
+  .label {
+    font-family: var(--font-ui);
+    text-transform: uppercase;
+    letter-spacing: 0.32em;
+    font-size: 0.68rem;
+    font-weight: 500;
+  }
+  .metal-border {
+    border: 1px solid transparent;
+    background:
+      linear-gradient(var(--color-abyss), var(--color-abyss)) padding-box,
+      linear-gradient(135deg, #5c5e66, #1b1c20 35%, #3a3b42 60%, #111 100%) border-box;
+  }
+  .text-metal {
+    background: linear-gradient(180deg, #ffffff 0%, #d4d4d8 40%, #7c7e86 62%, #c9c9ce 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .text-blood {
+    background: linear-gradient(180deg, #ff4a5c 0%, #c8102e 45%, #5c0612 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .text-outline {
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(236, 232, 225, 0.22);
+  }
+  .clip-blade {
+    clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 14px 100%, 0 calc(100% - 14px));
+  }
+  .glow-red {
+    box-shadow:
+      0 0 0 1px rgba(200, 16, 46, 0.6),
+      0 0 24px -4px rgba(200, 16, 46, 0.6);
+  }
+}
+
+/* Atmosphere overlays -------------------------------------------------- */
+.grain {
+  position: absolute;
+  inset: -100%;
+  width: 300%;
+  height: 300%;
+  pointer-events: none;
+  z-index: 90;
+  opacity: 0.07;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation: grain 0.9s steps(6) infinite;
+  will-change: transform;
+}
+@keyframes grain {
+  0% { transform: translate(0, 0); }
+  20% { transform: translate(-4%, 3%); }
+  40% { transform: translate(3%, -5%); }
+  60% { transform: translate(-6%, -2%); }
+  80% { transform: translate(5%, 4%); }
+  100% { transform: translate(0, 0); }
+}
+.scanlines {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 89;
+  background: repeating-linear-gradient(to bottom, rgba(255, 255, 255, 0.018) 0 1px, transparent 1px 3px);
+  mix-blend-mode: overlay;
+}
+.vignette {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 88;
+  background: radial-gradient(ellipse at center, transparent 55%, rgba(0, 0, 0, 0.55) 100%);
+}
+
+/* Fog that drifts — two layers of the same blurred gradients */
+.fog {
+  position: absolute;
+  inset: -10% -50%;
+  pointer-events: none;
+  background:
+    radial-gradient(40% 25% at 20% 70%, rgba(120, 120, 130, 0.12), transparent 70%),
+    radial-gradient(35% 20% at 60% 80%, rgba(140, 30, 40, 0.14), transparent 70%),
+    radial-gradient(30% 18% at 85% 65%, rgba(120, 120, 130, 0.1), transparent 70%);
+  animation: fog-drift 38s linear infinite alternate;
+  will-change: transform;
+}
+.fog.fog-2 {
+  animation-duration: 54s;
+  animation-direction: alternate-reverse;
+  opacity: 0.8;
+  transform: scaleX(-1);
+}
+@keyframes fog-drift {
+  from { transform: translate3d(-8%, 0, 0); }
+  to { transform: translate3d(8%, -2%, 0); }
+}
+
+/* Small life details ---------------------------------------------------- */
+@keyframes blink {
+  0%, 60%, 100% { opacity: 1; }
+  70%, 90% { opacity: 0.15; }
+}
+.blink {
+  animation: blink 2.4s infinite;
+}
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  41% { opacity: 1; }
+  42% { opacity: 0.55; }
+  43% { opacity: 1; }
+  47% { opacity: 0.8; }
+  48% { opacity: 1; }
+  82% { opacity: 1; }
+  83% { opacity: 0.4; }
+  84% { opacity: 0.95; }
+}
+.flicker {
+  animation: flicker 7s infinite;
+}
+@keyframes marquee {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-50%, 0, 0); }
+}
+.marquee {
+  animation: marquee 40s linear infinite;
+}
+@keyframes sweep {
+  0% { transform: translate3d(-120%, 0, 0) skewX(-20deg); }
+  100% { transform: translate3d(220%, 0, 0) skewX(-20deg); }
+}
+.sheen::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  width: 40%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.14), transparent);
+  transform: translate3d(-120%, 0, 0) skewX(-20deg);
+  pointer-events: none;
+}
+.sheen:hover::after {
+  animation: sweep 0.9s var(--ease-out-expo);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .grain,
+  .fog,
+  .marquee,
+  .flicker,
+  .blink {
+    animation: none !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}

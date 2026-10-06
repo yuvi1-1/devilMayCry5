@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1350" width="900" height="1350">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#050506"/><stop offset=".5" stop-color="#070b14"/><stop offset="1" stop-color="#030303"/>
+</linearGradient>
+<radialGradient id="glow" cx=".5" cy=".42" r=".55">
+<stop offset="0" stop-color="#6f93c9" stop-opacity=".55"/><stop offset=".45" stop-color="#6f93c9" stop-opacity=".12"/><stop offset="1" stop-color="#6f93c9" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="shaft" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#fff" stop-opacity=".9"/><stop offset=".7" stop-color="#fff" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+<stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".95"/>
+</linearGradient>
+<linearGradient id="metal" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#e8e8ec"/><stop offset=".45" stop-color="#6b6d75"/>
+<stop offset=".55" stop-color="#1a1b20"/><stop offset="1" stop-color="#6b6d75"/>
+</linearGradient>
+<filter id="fog" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.005 0.011000000000000001" numOctaves="3" seed="22"/>
+<feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 1.1 -0.45"/>
+</filter>
+</defs>
+<rect width="900" height="1350" fill="url(#bg)"/>
+<rect width="900" height="1350" fill="url(#glow)"/>
+<rect x="535.3" y="-200" width="68.4" height="1800" fill="url(#shaft)" opacity="0.1" transform="rotate(-15.9 535.3 0)"/><rect x="355.2" y="-200" width="147.7" height="1800" fill="url(#shaft)" opacity="0.1" transform="rotate(-11.3 355.2 0)"/><rect x="621.3" y="-200" width="42" height="1800" fill="url(#shaft)" opacity="0.1" transform="rotate(-16.7 621.3 0)"/><rect x="228" y="-200" width="99.7" height="1800" fill="url(#shaft)" opacity="0.1" transform="rotate(-12.5 228 0)"/><rect x="257.1" y="-200" width="107.5" height="1800" fill="url(#shaft)" opacity="0.1" transform="rotate(-11.3 257.1 0)"/>
+<text x="450" y="1080" text-anchor="middle" font-family="Georgia, serif" font-size="620" font-weight="700" fill="#fff" opacity=".035" letter-spacing="-20">II</text>
+<g>
+<circle cx="450" cy="560" r="210" fill="#6f93c9" opacity=".08"/>
+<mask id="cres"><rect width="900" height="1350" fill="#000"/><circle cx="450" cy="560" r="200" fill="#fff"/><circle cx="530" cy="520" r="185" fill="#000"/></mask>
+<circle cx="450" cy="560" r="200" fill="#e6ecf5" mask="url(#cres)" opacity=".92"/>
+<circle cx="450" cy="560" r="260" fill="none" stroke="#dfe6f0" stroke-width=".8" opacity=".35"/>
+<line x1="120" y1="300" x2="780" y2="260" stroke="#dfe6f0" stroke-width="2.2" opacity="0.25"/><line x1="150" y1="380" x2="760" y2="345" stroke="#dfe6f0" stroke-width="0.8" opacity="0.45"/><line x1="180" y1="460" x2="740" y2="430" stroke="#dfe6f0" stroke-width="0.8" opacity="0.65"/><line x1="210" y1="540" x2="720" y2="515" stroke="#dfe6f0" stroke-width="2.2" opacity="0.25"/><line x1="240" y1="620" x2="700" y2="600" stroke="#dfe6f0" stroke-width="0.8" opacity="0.45"/><line x1="270" y1="700" x2="680" y2="685" stroke="#dfe6f0" stroke-width="0.8" opacity="0.65"/><line x1="300" y1="780" x2="660" y2="770" stroke="#dfe6f0" stroke-width="2.2" opacity="0.25"/>
+<line x1="50" y1="600" x2="850" y2="520" stroke="#6f93c9" stroke-width="3"/></g>
+<path d="M-50 1117.1 L950 897.1 L950 900.1 Z" fill="#6f93c9" opacity="0.3"/><path d="M-50 1017.3 L950 797.3 L950 800.3 Z" fill="#6f93c9" opacity="0.4"/><path d="M-50 424.1 L950 204.1 L950 207.1 Z" fill="#6f93c9" opacity="0.3"/>
+<rect width="900" height="1350" filter="url(#fog)" opacity=".22"/>
+<rect width="900" height="1350" fill="url(#fade)"/>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" width="1000" height="400"><defs>
+<linearGradient id="bl" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#f6f6f8"/><stop offset=".46" stop-color="#a5a7af"/><stop offset=".54" stop-color="#3a3c43"/><stop offset="1" stop-color="#16171b"/>
+</linearGradient>
+<linearGradient id="dk" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#5d5f68"/><stop offset=".5" stop-color="#1d1e23"/><stop offset="1" stop-color="#0a0a0c"/>
+</linearGradient>
+<linearGradient id="ac" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff6a1a"/><stop offset="1" stop-color="#2a0306"/></linearGradient>
+<filter id="gl"><feGaussianBlur stdDeviation="6"/></filter>
+</defs>
+<g transform="translate(180 -10) rotate(-6 150 200)">
+<path d="M0 160 L170 140 L200 170 L200 240 L170 270 L0 250Z" fill="url(#dk)" stroke="#6a6c75"/>
+<rect x="200" y="150" width="80" height="22" rx="8" fill="url(#dk)" stroke="#45474e"/><rect x="200" y="176" width="80" height="22" rx="8" fill="url(#dk)" stroke="#45474e"/><rect x="200" y="202" width="80" height="22" rx="8" fill="url(#dk)" stroke="#45474e"/><rect x="200" y="228" width="80" height="22" rx="8" fill="url(#dk)" stroke="#45474e"/>
+<path d="M20 205 L160 195" stroke="#ff6a1a" stroke-width="5"/><path d="M20 205 L160 195" stroke="#ff6a1a" stroke-width="14" filter="url(#gl)" opacity=".6"/>
+<path d="M40 150 l20 -40 20 36 M100 145 l20 -46 20 42" fill="url(#dk)" stroke="#45474e"/>
+</g><g transform="translate(540 20) rotate(8 150 200)">
+<path d="M0 160 L170 140 L200 170 L200 240 L170 270 L0 250Z" fill="url(#dk)" stroke="#6a6c75"/>
+<rect x="200" y="150" width="80" height="22" rx="8" fill="url(#dk)" stroke="#45474e"/><rect x="200" y="176" width="80" height="22" rx="8" fill="url(#dk)" stroke="#45474e"/><rect x="200" y="202" width="80" height="22" rx="8" fill="url(#dk)" stroke="#45474e"/><rect x="200" y="228" width="80" height="22" rx="8" fill="url(#dk)" stroke="#45474e"/>
+<path d="M20 205 L160 195" stroke="#ff6a1a" stroke-width="5"/><path d="M20 205 L160 195" stroke="#ff6a1a" stroke-width="14" filter="url(#gl)" opacity=".6"/>
+<path d="M40 150 l20 -40 20 36 M100 145 l20 -46 20 42" fill="url(#dk)" stroke="#45474e"/>
+</g></svg>

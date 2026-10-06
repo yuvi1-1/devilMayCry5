@@ -1,0 +1,13 @@
+// Self-hosted fonts (latin subset only) — no render-blocking third-party requests.
+import '@fontsource/cinzel/latin-500.css'
+import '@fontsource/cinzel/latin-700.css'
+import '@fontsource/cinzel/latin-900.css'
+import '@fontsource/cormorant-garamond/latin-500.css'
+import '@fontsource/cormorant-garamond/latin-400-italic.css'
+import '@fontsource/cormorant-garamond/latin-500-italic.css'
+import '@fontsource/barlow-condensed/latin-400.css'
+import '@fontsource/barlow-condensed/latin-500.css'
+import '@fontsource/barlow-condensed/latin-600.css'
+import '@fontsource/barlow-condensed/latin-700.css'
+import '@fontsource/barlow/latin-300.css'
+import '@fontsource/barlow/latin-400.css'

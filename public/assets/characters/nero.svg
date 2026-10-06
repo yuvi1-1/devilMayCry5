@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1350" width="900" height="1350">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#050506"/><stop offset=".5" stop-color="#0a0b16"/><stop offset="1" stop-color="#030303"/>
+</linearGradient>
+<radialGradient id="glow" cx=".5" cy=".42" r=".55">
+<stop offset="0" stop-color="#c8102e" stop-opacity=".55"/><stop offset=".45" stop-color="#c8102e" stop-opacity=".12"/><stop offset="1" stop-color="#c8102e" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="shaft" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#fff" stop-opacity=".9"/><stop offset=".7" stop-color="#fff" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+<stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".95"/>
+</linearGradient>
+<linearGradient id="metal" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#e8e8ec"/><stop offset=".45" stop-color="#6b6d75"/>
+<stop offset=".55" stop-color="#1a1b20"/><stop offset="1" stop-color="#6b6d75"/>
+</linearGradient>
+<filter id="fog" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.005 0.011000000000000001" numOctaves="3" seed="33"/>
+<feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 1.1 -0.45"/>
+</filter>
+</defs>
+<rect width="900" height="1350" fill="url(#bg)"/>
+<rect width="900" height="1350" fill="url(#glow)"/>
+<rect x="485.5" y="-200" width="128.7" height="1800" fill="url(#shaft)" opacity="0.1" transform="rotate(-17.8 485.5 0)"/><rect x="412.6" y="-200" width="138.3" height="1800" fill="url(#shaft)" opacity="0.1" transform="rotate(-12.1 412.6 0)"/><rect x="653" y="-200" width="155.5" height="1800" fill="url(#shaft)" opacity="0.1" transform="rotate(-9.9 653 0)"/><rect x="258.8" y="-200" width="138.3" height="1800" fill="url(#shaft)" opacity="0.1" transform="rotate(-11.7 258.8 0)"/><rect x="499" y="-200" width="55.2" height="1800" fill="url(#shaft)" opacity="0.1" transform="rotate(-15.3 499 0)"/>
+<text x="450" y="1080" text-anchor="middle" font-family="Georgia, serif" font-size="620" font-weight="700" fill="#fff" opacity=".035" letter-spacing="-20">III</text>
+<g>
+<path d="M450 560 C330 400, 190 440, 120 540" fill="none" stroke="#c8102e" stroke-width="3" opacity=".8"/>
+<path d="M450 560 C570 400, 710 440, 780 540" fill="none" stroke="#c8102e" stroke-width="3" opacity=".8"/><path d="M450 560 C290 370, 160 450, 110 580" fill="none" stroke="#5b84d9" stroke-width="2.5" opacity=".8"/>
+<path d="M450 560 C610 370, 740 450, 790 580" fill="none" stroke="#5b84d9" stroke-width="2.5" opacity=".8"/><path d="M450 560 C250 340, 130 460, 100 620" fill="none" stroke="#c8102e" stroke-width="2" opacity=".8"/>
+<path d="M450 560 C650 340, 770 460, 800 620" fill="none" stroke="#c8102e" stroke-width="2" opacity=".8"/><path d="M450 560 C210 310, 100 470, 90 660" fill="none" stroke="#5b84d9" stroke-width="1.5" opacity=".8"/>
+<path d="M450 560 C690 310, 800 470, 810 660" fill="none" stroke="#5b84d9" stroke-width="1.5" opacity=".8"/>
+<circle cx="450" cy="560" r="70" fill="none" stroke="#dfe6f0" stroke-width="2"/>
+<path d="M450 510 a50 50 0 1 1 -1 0 M450 530 a30 30 0 1 0 1 0" fill="none" stroke="#c8102e" stroke-width="3"/></g>
+<path d="M-50 1174.3 L950 954.3 L950 957.3 Z" fill="#c8102e" opacity="0.3"/><path d="M-50 1077.2 L950 857.2 L950 860.2 Z" fill="#c8102e" opacity="0.4"/><path d="M-50 920.5 L950 700.5 L950 703.5 Z" fill="#c8102e" opacity="0.4"/>
+<rect width="900" height="1350" filter="url(#fog)" opacity=".22"/>
+<rect width="900" height="1350" fill="url(#fade)"/>
+</svg>

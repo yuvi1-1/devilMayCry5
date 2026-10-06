@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" preserveAspectRatio="xMidYMid slice">
+<defs>
+<radialGradient id="g" cx=".5" cy=".15" r=".8"><stop offset="0" stop-color="#5a0711"/><stop offset=".6" stop-color="#120205"/><stop offset="1" stop-color="#030102"/></radialGradient>
+<filter id="fog" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.004 0.0088" numOctaves="3" seed="21"/>
+<feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 1.1 -0.45"/>
+</filter>
+</defs>
+<rect width="1600" height="1000" fill="url(#g)"/>
+<path d="M80 1000 L80 500 Q120 380 160 500 L160 1000Z" fill="#000" opacity="0.9"/><path d="M250 1000 L250 450 Q290 330 330 450 L330 1000Z" fill="#000" opacity="0.8"/><path d="M420 1000 L420 400 Q460 280 500 400 L500 1000Z" fill="#000" opacity="0.7"/><path d="M590 1000 L590 350 Q630 230 670 350 L670 1000Z" fill="#000" opacity="0.6"/><path d="M760 1000 L760 300 Q800 180 840 300 L840 1000Z" fill="#000" opacity="0.6"/><path d="M930 1000 L930 350 Q970 230 1010 350 L1010 1000Z" fill="#000" opacity="0.6"/><path d="M1100 1000 L1100 400 Q1140 280 1180 400 L1180 1000Z" fill="#000" opacity="0.7"/><path d="M1270 1000 L1270 450 Q1310 330 1350 450 L1350 1000Z" fill="#000" opacity="0.8"/><path d="M1440 1000 L1440 500 Q1480 380 1520 500 L1520 1000Z" fill="#000" opacity="0.9"/>
+<path d="M0 1000 L800 520 L1600 1000Z" fill="#000" opacity=".5"/>
+<rect width="1600" height="1000" filter="url(#fog)" opacity=".18"/>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1350" width="900" height="1350">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#050506"/><stop offset=".5" stop-color="#070a08"/><stop offset="1" stop-color="#030303"/>
+</linearGradient>
+<radialGradient id="glow" cx=".5" cy=".42" r=".55">
+<stop offset="0" stop-color="#8fae95" stop-opacity=".55"/><stop offset=".45" stop-color="#8fae95" stop-opacity=".12"/><stop offset="1" stop-color="#8fae95" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="shaft" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#fff" stop-opacity=".9"/><stop offset=".7" stop-color="#fff" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+<stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".95"/>
+</linearGradient>
+<linearGradient id="metal" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#e8e8ec"/><stop offset=".45" stop-color="#6b6d75"/>
+<stop offset=".55" stop-color="#1a1b20"/><stop offset="1" stop-color="#6b6d75"/>
+</linearGradient>
+<filter id="fog" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.005 0.011000000000000001" numOctaves="3" seed="66"/>
+<feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 1.1 -0.45"/>
+</filter>
+</defs>
+<rect width="900" height="1350" fill="url(#bg)"/>
+<rect width="900" height="1350" fill="url(#glow)"/>
+<rect x="201.7" y="-200" width="40.6" height="1800" fill="url(#shaft)" opacity="0.1" transform="rotate(-10.7 201.7 0)"/><rect x="511.6" y="-200" width="143.7" height="1800" fill="url(#shaft)" opacity="0.1" transform="rotate(-18 511.6 0)"/><rect x="486.3" y="-200" width="72.3" height="1800" fill="url(#shaft)" opacity="0.1" transform="rotate(-17.8 486.3 0)"/><rect x="776.6" y="-200" width="111.5" height="1800" fill="url(#shaft)" opacity="0.1" transform="rotate(-9.4 776.6 0)"/><rect x="785.3" y="-200" width="84.9" height="1800" fill="url(#shaft)" opacity="0.1" transform="rotate(-8.8 785.3 0)"/>
+<text x="450" y="1080" text-anchor="middle" font-family="Georgia, serif" font-size="620" font-weight="700" fill="#fff" opacity=".035" letter-spacing="-20">VI</text>
+<g>
+<path d="M450 680 C370 640, 250 650, 170 690 L170 440 C250 400, 370 410, 450 450Z M450 680 C530 640, 650 650, 730 690 L730 440 C650 400, 530 410, 450 450Z" fill="none" stroke="#e8e4d8" stroke-width="2" opacity=".8"/>
+<path d="M210 480 C280 455, 360 460, 420 485" fill="none" stroke="#e8e4d8" stroke-width=".8" opacity=".35"/><path d="M210 512 C280 487, 360 492, 420 517" fill="none" stroke="#e8e4d8" stroke-width=".8" opacity=".35"/><path d="M210 544 C280 519, 360 524, 420 549" fill="none" stroke="#e8e4d8" stroke-width=".8" opacity=".35"/><path d="M210 576 C280 551, 360 556, 420 581" fill="none" stroke="#e8e4d8" stroke-width=".8" opacity=".35"/><path d="M210 608 C280 583, 360 588, 420 613" fill="none" stroke="#e8e4d8" stroke-width=".8" opacity=".35"/><path d="M210 640 C280 615, 360 620, 420 645" fill="none" stroke="#e8e4d8" stroke-width=".8" opacity=".35"/>
+<path d="M510 820 C570 640, 650 440, 770 260 C700 440, 610 640, 510 820Z" fill="#8fae95" opacity=".85"/>
+<circle cx="390" cy="780" r="7" fill="#8fae95"/><circle cx="450" cy="780" r="7" fill="#8fae95"/><circle cx="510" cy="780" r="7" fill="#8fae95"/></g>
+<path d="M-50 573.3 L950 353.3 L950 356.3 Z" fill="#8fae95" opacity="0.3"/><path d="M-50 1067.1 L950 847.1 L950 850.1 Z" fill="#8fae95" opacity="0.5"/><path d="M-50 585.2 L950 365.2 L950 368.2 Z" fill="#8fae95" opacity="0.3"/>
+<rect width="900" height="1350" filter="url(#fog)" opacity=".22"/>
+<rect width="900" height="1350" fill="url(#fade)"/>
+</svg>

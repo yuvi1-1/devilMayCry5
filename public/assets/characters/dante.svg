@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1350" width="900" height="1350">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#050506"/><stop offset=".5" stop-color="#1c0508"/><stop offset="1" stop-color="#030303"/>
+</linearGradient>
+<radialGradient id="glow" cx=".5" cy=".42" r=".55">
+<stop offset="0" stop-color="#c8102e" stop-opacity=".55"/><stop offset=".45" stop-color="#c8102e" stop-opacity=".12"/><stop offset="1" stop-color="#c8102e" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="shaft" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#fff" stop-opacity=".9"/><stop offset=".7" stop-color="#fff" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+<stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".95"/>
+</linearGradient>
+<linearGradient id="metal" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#e8e8ec"/><stop offset=".45" stop-color="#6b6d75"/>
+<stop offset=".55" stop-color="#1a1b20"/><stop offset="1" stop-color="#6b6d75"/>
+</linearGradient>
+<filter id="fog" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.005 0.011000000000000001" numOctaves="3" seed="11"/>
+<feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 1.1 -0.45"/>
+</filter>
+</defs>
+<rect width="900" height="1350" fill="url(#bg)"/>
+<rect width="900" height="1350" fill="url(#glow)"/>
+<rect x="458.1" y="-200" width="103.6" height="1800" fill="url(#shaft)" opacity="0.1" transform="rotate(-12.1 458.1 0)"/><rect x="695.5" y="-200" width="104.6" height="1800" fill="url(#shaft)" opacity="0.1" transform="rotate(-12.7 695.5 0)"/><rect x="525.4" y="-200" width="94" height="1800" fill="url(#shaft)" opacity="0.1" transform="rotate(-9.6 525.4 0)"/><rect x="394" y="-200" width="120.4" height="1800" fill="url(#shaft)" opacity="0.1" transform="rotate(-16.4 394 0)"/><rect x="225" y="-200" width="73.1" height="1800" fill="url(#shaft)" opacity="0.1" transform="rotate(-14.2 225 0)"/>
+<text x="450" y="1080" text-anchor="middle" font-family="Georgia, serif" font-size="620" font-weight="700" fill="#fff" opacity=".035" letter-spacing="-20">I</text>
+<g>
+<circle cx="450" cy="560" r="230" fill="none" stroke="#c8102e" stroke-width="2" opacity=".55"/>
+<circle cx="450" cy="560" r="252" fill="none" stroke="#d9d9de" stroke-width=".8" opacity=".35" stroke-dasharray="2 10"/>
+<path d="M450 230 L468 310 L468 810 L450 880 L432 810 L432 310Z" fill="url(#metal)" opacity=".9"/>
+<path d="M340 350 Q450 400 560 350 L510 380 L450 370 L390 380Z" fill="#cfcfd4" opacity=".75"/>
+<path d="M450 440 l70 120 -70 120 -70 -120z" fill="none" stroke="#c8102e" stroke-width="3"/>
+<path d="M200 600 L330 600 M570 600 L700 600" stroke="#c8102e" stroke-width="2" opacity=".7"/></g>
+<path d="M-50 944.3 L950 724.3 L950 727.3 Z" fill="#c8102e" opacity="0.3"/><path d="M-50 957.4 L950 737.4 L950 740.4 Z" fill="#c8102e" opacity="0.4"/><path d="M-50 796.6 L950 576.6 L950 579.6 Z" fill="#c8102e" opacity="0.5"/>
+<rect width="900" height="1350" filter="url(#fog)" opacity=".22"/>
+<rect width="900" height="1350" fill="url(#fade)"/>
+</svg>
